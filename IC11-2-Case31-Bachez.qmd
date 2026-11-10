@@ -409,7 +409,7 @@ tibble(
 ## Links
 
 - **GitHub Repository:** [View Repository](https://github.com/kebachez/-IC11-2-Case-31.git)
-- **GitHub Pages:** [View Published Report](https://kebachez.github.io/IC11-2-Case31/)
+- **GitHub Pages:** [View Published Report](https://kebachez.github.io/-IC11-2-Case-31/)
 
 ## R Code
 
