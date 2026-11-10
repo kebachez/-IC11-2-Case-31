@@ -126,7 +126,7 @@ ggplot(r1, aes(x = factor(Response, levels = r1_labels), y = `Valid %`)) +
 :::
 ::::
 
-## R1: One-Sample t-test & Insight
+## R1: One-Sample t-test & Insight (Q7r)
 
 ```{r}
 #| label: tbl-r1-t
@@ -165,7 +165,7 @@ kable(r2_q30)
 :::
 ::::
 
-## R2: Loan Rate Perceptions
+## R2: Descriptive Statistics, Loan Rate Perceptions
 
 ```{r}
 #| label: fig-r2
@@ -189,7 +189,7 @@ bind_rows(
   theme_minimal()
 ```
 
-## R2: One-Sample t-tests & Insight
+## R2: One-Sample t-tests & Insight (Q8r & Q30)
 
 ```{r}
 #| label: tbl-r2-t
@@ -205,7 +205,7 @@ bind_rows(
 
 # R5: Awareness of Services
 
-## R5: Descriptive Statistics (Q13r – Q26r)
+## R5: Descriptive Statistics & Chi-square Goodness-of-Fit Tests (Q13r – Q26r)
 
 ```{r}
 #| label: tbl-r5
@@ -248,7 +248,7 @@ r5_tbl <- r5_long |>
 kable(r5_tbl)
 ```
 
-## R5: Awareness Profile
+## R5: Descriptive Statistics, Awareness Profile
 
 ```{r}
 #| label: fig-r5
@@ -272,7 +272,7 @@ r5_long |>
 
 ## R5: Insight
 
-**Insight.** Members know about most loan products but rarely use them, and several savings-related services are largely unknown. Car loans and signature loans are well known: fewer than 20% are unaware of them, and most members fall in "aware, but have not used" (e.g., signature loans 81.2%, late model car loans 79.7%; @tbl-r5). In contrast, a majority are unaware of IRA loans (60.9%) and share collateralized loans (53.9%). A large share are also unaware of recreational loans (43.0%) and special subaccounts (35.9%) (@fig-r5). Actual use is low across the board. Only the MasterCard (43.8%), line of credit loans (37.5%), and IRAs (22.7%) are used by more than one in five members. For every service, responses are far from evenly spread across the three awareness levels (all χ² tests p < .001; @tbl-r5). The credit union has a **conversion problem** for loans (members know but don't use them) and an **awareness problem** for IRA loans, share collateralized loans, and specialty savings accounts.
+**Insight.** Members know about most loan products but rarely use them, and several savings-related services are largely unknown. New car, late model car, and signature loans are well known: fewer than 10% are unaware of them, and most members fall in "aware, but have not used" (e.g., signature loans 81.2%, late model car loans 79.7%; @tbl-r5). In contrast, a majority are unaware of IRA loans (60.9%) and share collateralized loans (53.9%). A large share are also unaware of recreational loans (43.0%) and special subaccounts (35.9%) (@fig-r5). Actual use is low across the board. Only the MasterCard (43.8%), line of credit loans (37.5%), and IRAs (22.7%) are used by more than one in five members. For every service, responses are far from evenly spread across the three awareness levels (all χ² tests p < .001; @tbl-r5). The credit union has a **conversion problem** for loans (members know but don't use them) and an **awareness problem** for IRA loans, share collateralized loans, and specialty savings accounts.
 
 ::: {.callout-note}
 The coding matches Case Exhibit 31.2 (1 = Aware and have used, 3 = Unaware), yet 64.8% of members say they are unaware of the *regular share account*. Since a share account is normally what makes someone a member, members may not recognize the product by this name. That alone is a communication issue worth raising with the client.
@@ -280,7 +280,7 @@ The coding matches Case Exhibit 31.2 (1 = Aware and have used, 3 = Unaware), yet
 
 # R6: Operational Effectiveness
 
-## R6: Descriptive Statistics, Interval Items
+## R6: Descriptive Statistics & One-Sample t-tests (Interval Items)
 
 ```{r}
 #| label: tbl-r6-t
@@ -299,7 +299,7 @@ bind_rows(
 
 Test values are the scale midpoints, except for Q9r. For Q9r, "About right" (3) is the ideal answer, so it is the benchmark.
 
-## R6: Agreement with Operational Statements
+## R6: Descriptive Statistics, Agreement with Q31 – Q34
 
 ```{r}
 #| label: fig-r6
@@ -336,7 +336,7 @@ efcu |>
   theme(legend.position = "bottom")
 ```
 
-## R6: Descriptive Statistics, Nominal Items
+## R6: Descriptive Statistics & Chi-square Goodness-of-Fit Tests (Q11, Q12rc)
 
 :::: {.columns}
 ::: {.column width="50%"}
